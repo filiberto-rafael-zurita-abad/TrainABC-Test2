@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import axios from 'axios';
 const url = `https://api.unsplash.com/search/photos?client_id=${process.env.UNSPLASH_API_KEY}&query=`;
-export const dynamic = 'firce-dynamic'; 
+export const dynamic = 'force-dynamic'; 
 
 const SingleTourPage = async ({ params }) => {
   const tour = await prisma.tour.findUnique({
