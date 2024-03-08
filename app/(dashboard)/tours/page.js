@@ -5,6 +5,9 @@ import {
   QueryClient,
 } from '@tanstack/react-query';
 import { getAllTours } from '@/utils/actions';
+
+export const dynamic = 'force-dynamic';
+
 export default async function AllToursPage() {
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
